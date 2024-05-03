@@ -1,0 +1,86 @@
+#container4{
+    overflow: hidden;
+    margin: 40px;
+    color: rgb(255, 255, 255);
+}
+#container4 #titleNews{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 900;
+}
+#container4 #titleNews #first{
+    font-size: 100px;
+    text-align: left;
+}
+#container4 #titleNews #second{
+    text-decoration: underline;
+    font-weight: 100;
+}
+
+#container4{
+    position: relative;
+}
+#container4 #blogPosts{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+#container4 #blogPosts p{
+    color: gray;
+    gap: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#blogPosts{
+    position: relative;
+}
+#blogPosts span{
+    height: 1px;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.322);
+    margin-bottom: 20px;
+} 
+#post img{
+    height: 300px;
+}
+
+
+
+@media screen and (max-width: 1498px) {
+    #container4 #blogPosts{
+        justify-content: space-around;
+    }
+    .endCard{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1032px) {
+    #container4 #blogPosts{
+        /* justify-content: center; */
+        /* flex-wrap: wrap; */
+        display: grid;
+        place-content: center;
+    }
+    
+}
+
+@media screen and (max-width: 470px) {
+    
+    #post img{
+        height: 200px;
+    }
+    #container4 #titleNews #first{
+        font-size: 70px;
+        text-align: left;
+    }
+    #container4 #titleNews #second{
+        text-decoration: underline;
+        font-weight: 100;
+    }
+    
+}

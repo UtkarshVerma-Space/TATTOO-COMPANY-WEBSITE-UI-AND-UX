@@ -1,0 +1,140 @@
+#container5{
+    color: white;
+    margin: 200px 40px 40px 40px;
+}
+
+#container5 h1{
+    background-color: antiquewhitez;
+    font-size: 100px;
+    text-align: right;
+}
+#options{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    justify-content: space-around;
+}
+#options li{
+    list-style: none;
+    font-size: 30px;
+    font-weight: 100;
+    color: gray;
+}
+#navs1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#navs1 .title{
+    font-size: 30px;
+    font-weight: 600;
+}
+.sayhello{
+    font-size: 20px;
+    font-weight: 100
+    ;
+}
+.email{
+    font-weight: 500;
+}
+
+#navs2{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: space-between;
+}
+.location{
+    color: gray;
+}
+
+
+#copyright{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    font-weight: 100;
+    font-size: 25px;
+}
+#copyright p{
+    text-align: right;
+    margin-bottom: 50px;
+}
+
+#dividercon{
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.26);
+    width: 100%;
+    margin-top: 100px;
+}
+
+
+@media screen and (max-width: 720px) {
+
+    #options li{
+        list-style: none;
+        font-size: 25px;
+        font-weight: 100;
+        color: gray;
+    }
+    #navs1 .title{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    #copyright{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 70% 30%;
+        font-weight: 100;
+        font-size: 20px;
+    }
+    
+}
+@media screen and (max-width: 596px) {
+
+    #options li{
+        list-style: none;
+        font-size: 20px;
+        font-weight: 100;
+        color: gray;
+    }
+    #navs1 .title{
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 434px) {
+
+    #options li{
+        list-style: none;
+        font-size: 15px;
+        font-weight: 100;
+        color: gray;
+    }
+    #navs1 .title{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .sayhello{
+        font-size: 15px;
+        font-weight: 100
+        ;
+    }
+    .email{
+        font-weight: 500;
+        font-size: 10px;
+    }
+    #navs1{
+        align-items: start;
+        justify-content: center;
+        gap: 8px;
+    }
+    #copyright{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 70% 30%;
+        font-weight: 100;
+        font-size: 12px;
+    }
+}

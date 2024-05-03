@@ -1,0 +1,84 @@
+#conatiner3{
+    background-image: url("./assets/images/bg2.png");
+    background-color: black;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#wrapper{
+    margin: 40px;
+}
+#titleSchedule{
+
+    z-index: 999;
+    font-size: 80px;
+    text-align: right;
+    overflow: hidden;
+    margin-top: 100px;
+}
+#dates{
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 40px;
+    color: rgba(255, 255, 255, 0.548);
+    font-weight: 100;
+    margin-top: 50px;
+}
+#eventstoSchedule{
+    overflow: hidden;
+    margin-top: 30px;
+}
+#eventstoSchedule #event{
+    margin-bottom: 30px;
+}
+#eventstoSchedule #event h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+#eventstoSchedule #event p{
+    font-size: 20px;
+    font-weight: 300;
+    color: gray;
+}
+
+#dividers{
+    height: 1px;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.253);
+    margin-bottom: 10px;
+}
+
+
+#darkDivider{
+    height: 100px;
+    width: 300px;
+    /* background-color: rgba(0, 0, 0, 0.938); */
+    width: 100%;
+    margin-top: -90px;
+    position: absolute;
+    box-shadow: 0px 50px 20px 0px rgb(0, 0, 0);
+}
+
+#darkDivider2{
+    height: 100px;
+    width: 300px;
+    /* background-color: rgba(0, 0, 0, 0.938); */
+    width: 100%;
+    margin-top: -5px;
+    position: absolute;
+    box-shadow: 0px -50px 20px 0px rgb(0, 0, 0);
+}
+
+
+@media screen and (max-width: 474px) {
+    #titleSchedule{
+    font-size: 60px;
+    }
+    #eventstoSchedule #event h1{
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+}

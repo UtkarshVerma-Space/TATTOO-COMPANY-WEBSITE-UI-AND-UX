@@ -1,0 +1,78 @@
+#container2{
+  color: white;
+
+  background-color: black;
+}
+
+#container2 h1{
+  font-size: 150px;
+  margin-left: 90px;
+  overflow: hidden;
+}
+#container2 p{
+  margin-left: 90px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+
+#conatiner3{
+  background-image: url("./assets/images/bg2.png");
+  background-color: black;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#artists{
+  overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+  #artists img{
+    width: 400px;
+    height: 600px;
+    opacity: 0.8;
+    margin: 20px;
+  }
+
+
+@media screen and (max-width: 720px) {
+  #container2 h1{
+    font-size: 100px;
+    margin-left: 90px;
+    overflow: hidden;
+    z-index: 9999;
+    margin-top: 50PX;
+  }
+}
+
+
+
+@media screen and (max-width: 498px) {
+  #container2 h1{
+    font-size: 80px;
+    margin-left: 20px;
+    overflow: hidden;
+    z-index: 9999;
+    margin-top: 100PX;
+  }
+  #artists img{
+    width: 300px;
+    height: 400px;
+    opacity: 0.8;
+    margin: 20px;
+  }
+  #container2 p{
+    margin-top: 10PX;
+    margin-left: 20px;
+    font-weight: 400;
+    color: gray;
+  }
+  
+
+}

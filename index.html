@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/schedule.css">
     <link rel="stylesheet" href="./css/news.css">
     <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/loading.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -25,7 +26,25 @@
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Jersey+15&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
+
+    <div id="loadingContainer">
+        <div class="loading">
+            <p>L</p>
+            <span></span>
+            <p>O</p>
+            <span></span>
+            <p>A</p>
+            <span></span>
+            <p>D</p>
+            <span></span>
+            <p>I</p>
+            <span></span>
+            <p>N</p>
+            <span></span>
+            <p>G</p>
+        </div>
+    </div>    
 
 
     <div id="container">
@@ -179,6 +198,20 @@
     </div>
 
 </div>
+
+
+<script>
+    // Wait for all assets to load
+    window.onload = function() {
+      // Remove the loading overlay
+      var loadingOverlay = document.getElementById('loadingContainer');
+      loadingOverlay.style.display="none";
+      var container = document.getElementById('container')
+      container.style.opacity="1"
+      document.body.style.overflow = 'scroll';
+    };
+  </script>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
